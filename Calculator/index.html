@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12 ">
+                <form action="#" class="main shadow-lg" name="calculator" method="get">  
+                    <input type="text" class="display form-control text-end mt-3" readonly name="dispaly" id="display"><br>
+                   
+                    <input type="button" value="C" class="btn btn-danger " id="clear">
+                    <input type="button" value="->" class="btn btn-danger ms-3  " onclick="backspace()">
+                    <input type="button" value="%" class="btn btn-success  ms-3 " 
+                     onclick="document.calculator.display.value +='%'">
+                    <input type="button" value="/" class="btn btn-success ms-3" 
+                     onclick="document.calculator.display.value +='/'"><br><br>
+                    <input type="button" value="9" class="btn btn-primary" onclick="nine()">
+                    <input type="button" value=" 8 " class="btn btn-primary ms-3 " onclick="eight()">
+                    <input type="button" value="7 " class="btn btn-primary  ms-3 " onclick="seven()">
+                    <input type="button" value="*" class="btn btn-success  ms-3 "  
+                     onclick="document.calculator.display.value +='*'"><br><br>
+                    <input type="button" value="6" class="btn btn-primary " onclick="six()">
+                    <input type="button" value=" 5 " class="btn btn-primary ms-3 " onclick="five()">
+                    <input type="button" value="4 " class="btn btn-primary ms-3 " onclick="four()">
+                    <input type="button" value="-" class="btn btn-success ms-3" 
+                     onclick="document.calculator.display.value +='-'"><br><br>
+                    <input type="button" value="3" class="btn btn-primary " onclick="three()">
+                    <input type="button" value=" 2 " class="btn btn-primary ms-3 " onclick="two()">
+                    <input type="button" value="1 " class="btn btn-primary ms-3 " onclick="one()">
+                    <input type="button" value="+" class="btn btn-success ms-3" 
+                     onclick="document.calculator.display.value +='+'"><br><br>
+                    <input type="button" value="0" class="btn btn-primary   " onclick="zero()">
+                    <input type="button" value="00" class="btn btn-primary ms-3 "
+                     onclick="document.calculator.display.value +='00'">
+                    <input type="button" value=" . " class="btn btn-primary ms-3 " onclick="dot()">
+                    <input type="button" value="=" class="btn btn-secondary ms-3 " 
+                     onclick="document.calculator.display.value = eval(calculator.display.value)">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
